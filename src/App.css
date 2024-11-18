@@ -1,0 +1,87 @@
+/* App.css */
+
+/* General Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f1e1; /* Light beige background */
+  color: #3e2a47; /* Dark brown text color */
+  padding: 20px;
+  text-align: center;
+  margin: 0;
+}
+
+/* Heading 1 - Title of the page */
+h1 {
+  color: #6f4f28; /* Darker brown color */
+  margin-bottom: 20px;
+  font-size: 2.5rem; /* Larger title */
+  font-weight: bold;
+}
+
+/* Form container */
+form {
+  margin: 0 auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff; /* White background for form */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Input field */
+input {
+  padding: 12px;
+  margin: 10px 0;
+  width: 250px;
+  font-size: 1rem;
+  border: 1px solid #6f4f28; /* Dark brown border */
+  border-radius: 5px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+/* Input field focus effect */
+input:focus {
+  border-color: #4e3b1f; /* Darker brown on focus */
+}
+
+/* Submit button */
+button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  background-color: #6f4f28; /* Dark brown */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #4e3b1f; /* Darker brown on hover */
+}
+
+/* Suggested Wine Title */
+h2 {
+  font-size: 1.5rem;
+  color: #6f4f28; /* Dark brown */
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Error message styling */
+h3 {
+  color: #d9534f; /* Red color for error messages */
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+/* Add some space around the page */
+div {
+  padding: 20px;
+}

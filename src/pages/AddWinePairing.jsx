@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './AddWinePairing.css';
 
 const AddWinePairing = () => {
   const [wine, setWine] = useState('');

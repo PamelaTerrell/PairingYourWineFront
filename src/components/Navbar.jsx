@@ -1,19 +1,19 @@
 import React from 'react';
+import './Navbar.css'
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav style={{ backgroundColor: 'brown', padding: '10px' }}>
-      <ul style={{ display: 'flex', listStyleType: 'none', color: 'white' }}>
-        <li style={{ margin: '0 15px' }}>
-          <Link to="/" style={{ color: 'white', textDecoration: 'none' }}>
-            Home
-          </Link>
+    <nav className="navbar">
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
         </li>
-        <li style={{ margin: '0 15px' }}>
-          <Link to="/add" style={{ color: 'white', textDecoration: 'none' }}>
-            Add Wine Pairing
-          </Link>
+        <li>
+          <Link to="/add">Add Wine Pairing</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link> {/* Link to the About page */}
         </li>
       </ul>
     </nav>

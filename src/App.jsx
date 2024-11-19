@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import AddWinePairing from './pages/AddWinePairing';
 import About from './pages/About'; 
+import WineHistory from './pages/WineHistory';
 import Navbar from './components/Navbar';
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/add" element={<AddWinePairing />} />
         <Route path="/about" element={<About />} />
+        <Route path="/history" element={<WineHistory />} />
       </Routes>
     </Router>
   );

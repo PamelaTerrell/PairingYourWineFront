@@ -5,6 +5,19 @@ const About = () => {
   return (
     <div className="about-container">
       <h1>About Vino Pairings</h1>
+      
+      {/* Image and Attribution */}
+      <div className="image-container">
+        <img 
+          src="chips.jpg" 
+          alt="A delicious plate with chips, sausages, apples, and brown sauce" 
+          className="about-image" 
+        />
+        <p className="image-attribution">
+          Photo by <a href="https://unsplash.com/@brookelark?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank" rel="noopener noreferrer">Brooke Lark</a> on <a href="https://unsplash.com/photos/flat-lay-photography-of-sliced-apples-sausages-chips-and-brown-sauce-C1fMH2Vej8A?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank" rel="noopener noreferrer">Unsplash</a>
+        </p>
+      </div>
+      
       <p>
         You probably know the golden rule of thumb about wine pairings: Red wines pair best with bold-flavored proteins (red meat) and white wines pair best with light-intensity proteins (chicken or fish). 
         Of course, there's more to making successful wine-and-food pairings. The key to finding the perfect match is to balance the flavors, textures, and aromas of both the food and the wine.

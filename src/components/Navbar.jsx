@@ -13,12 +13,12 @@ const Navbar = () => {
         </li>
         <li className="navbar-item">
           <Link to="/add" className="navbar-link">
-            Add Wine Pairing
+            Add Vino Pairing
           </Link>
         </li>
         <li className="navbar-item">
           <Link to="/history" className="navbar-link">
-            Wine History
+            Vino History
           </Link>
         </li>
         <li className="navbar-item">

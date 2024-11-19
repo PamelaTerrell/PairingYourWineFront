@@ -1,55 +1,59 @@
-/* Reset styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f5f2;
-    color: #4b3e2b; /* Dark brown */
-  }
-  
-  .about-container {
-    background-color: #fff8f0; /* Soft off-white */
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    margin: 20px auto;
-  }
-  
-  .about-container h1 {
+.about-container {
     text-align: center;
-    font-size: 2rem;
-    color: #4b3e2b;
+    padding-bottom: 40px; /* Adds padding to the bottom of the container */
+    max-width: 800px; /* Limit the width for better readability */
+    margin: 0 auto; /* Center the container */
+    font-family: 'Georgia', serif; /* More elegant font for text */
+  }
+  
+  h1 {
+    font-size: 2.5rem; /* Make the title stand out */
     margin-bottom: 20px;
+    color: #333; /* Darker color for the heading */
   }
   
-  .about-container p {
-    line-height: 1.6;
-    font-size: 1.1rem;
-    color: #4b3e2b;
-    margin-bottom: 20px;
+  p {
+    font-size: 1rem;
+    line-height: 1.6; /* Improve line spacing for readability */
+    margin-bottom: 20px; /* Add space between paragraphs */
+    color: #555; /* Softer text color */
+    text-align: left; /* Align text left for better readability */
+    padding: 0 20px; /* Padding on the sides to avoid text touching edges */
   }
   
-  .about-container p:last-child {
-    margin-bottom: 0;
+  .image-container {
+    margin: 20px 0;
   }
   
-  /* Responsive design */
-  @media (max-width: 600px) {
-    .about-container {
-      padding: 20px;
-    }
+  .about-image {
+    width: 80%; /* Reduce to 80% of the container width */
+    max-width: 500px; /* Set the maximum width to 500px */
+    margin: 0 auto;
+  }
   
-    .about-container h1 {
-      font-size: 1.5rem;
-    }
+  .image-attribution {
+    font-size: 0.875rem;
+    color: #777;
+  }
   
-    .about-container p {
-      font-size: 1rem;
-    }
+  .image-attribution a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .image-attribution a:hover {
+    text-decoration: underline;
+  }
+
+  
+  
+  /* Footer */
+  .footer {
+    background-color: #f1f1f1; /* Light background color */
+    padding: 20px 0;
+    margin-top: 40px; /* Add space above the footer */
+    text-align: center;
+    font-size: 0.875rem;
+    color: #555;
   }
   

@@ -4,7 +4,7 @@ import './WineHistory.css'; // Optional: For styling
 const WineHistory = () => {
   return (
     <div className="wine-history">
-      <h1>The History of Wine</h1>
+      <h1>The History of Vino</h1>
 
       <section className="intro">
         <h2>What is Wine?</h2>

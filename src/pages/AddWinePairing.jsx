@@ -83,10 +83,10 @@ const AddWinePairing = () => {
 
   return (
     <div className="add-wine-pairing">
-      <h1>Add a New Wine Pairing</h1>
+      <h1>Add a New Vino Pairing</h1>
 
       <p className="info-text">
-        Have you discovered a fabulous wine pairing that you think we should know about? 
+        Have you discovered a fabulous vino pairing that you think we should know about? 
         Tell us about it here and we can add it to our database!
       </p>
 

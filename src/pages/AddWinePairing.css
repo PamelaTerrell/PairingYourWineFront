@@ -1,100 +1,57 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Body and Page Layout */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f5f2; /* Light beige background */
-    color: #4b3e2b; /* Dark brown text color */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+/* AddWinePairing.css */
+
+/* General styling for the Add Wine Pairing page */
+.add-wine-pairing {
     padding: 20px;
+    font-family: 'Arial', sans-serif;
   }
   
-  /* Main container */
-  .add-wine-container {
-    background-color: #fff8f0; /* Soft off-white background */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    width: 100%;
-    max-width: 500px;
-  }
-  
-  /* Page Title */
-  .add-wine-container h1 {
-    text-align: center;
-    font-size: 1.8rem;
-    color: #4b3e2b;
+  h1 {
+    font-size: 2em;
     margin-bottom: 20px;
   }
   
-  /* Form elements */
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  .info-text {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 20px;
   }
   
-  input[type="text"] {
-    padding: 12px;
-    border: 1px solid #c5a88e; /* Light brown border */
-    border-radius: 6px;
-    font-size: 1rem;
-    color: #4b3e2b;
-    background-color: #fff;
-    transition: border-color 0.3s;
+  /* Form styling */
+  .wine-form {
+    max-width: 600px;
+    margin: 0 auto;
   }
   
-  input[type="text"]:focus {
-    border-color: #a0522d; /* Darker brown on focus */
-    outline: none;
+  .input-field {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
   }
   
-  button[type="submit"] {
-    background-color: #a0522d; /* Dark brown background */
+  .submit-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #8b4513; /* Brown color */
     color: white;
-    padding: 12px;
     border: none;
-    border-radius: 6px;
-    font-size: 1rem;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
   }
   
-  button[type="submit"]:hover {
-    background-color: #8b4513; /* Lighter brown on hover */
+  /* Success and Error messages */
+  .success-message {
+    color: green;
+    font-size: 18px;
+    margin-top: 20px;
   }
   
-  /* Error message styling */
-  .error {
+  .error-message {
     color: red;
-    font-size: 0.9rem;
-    text-align: center;
-  }
-  
-  /* Responsive design */
-  @media (max-width: 600px) {
-    .add-wine-container {
-      padding: 20px;
-    }
-  
-    .add-wine-container h1 {
-      font-size: 1.5rem;
-    }
-  
-    input[type="text"] {
-      font-size: 0.9rem;
-    }
-  
-    button[type="submit"] {
-      font-size: 0.9rem;
-    }
+    font-size: 18px;
+    margin-top: 20px;
   }
   

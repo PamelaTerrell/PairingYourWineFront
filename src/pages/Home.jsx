@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Home.css'; // Import the updated CSS for styling
 
 const Home = () => {
   // State to store the selected dish and wine pairing result
@@ -31,55 +32,57 @@ const Home = () => {
   };
 
   return (
-    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
-      <h1>Welcome to The Wine Pairing App</h1>
-      <p>
+    <div className="home-container">
+      <h1 className="heading">
+        Welcome to <span className="site-name">VinoPairings.com</span>
+      </h1>
+      <p className="description">
         Discover the perfect wine pairing for your favorite dishes.
       </p>
 
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="pairing-form">
         <input
           type="text"
           placeholder="Enter dish (Chicken, Beef, Pork, etc.)"
           value={dish}
           onChange={(e) => setDish(e.target.value)}
-          style={{
-            padding: '10px',
-            fontSize: '16px',
-            marginRight: '10px',
-            borderRadius: '5px',
-            border: '1px solid #ccc',
-            width: '300px',
-          }}
+          className="input-field"
         />
-        <button
-          type="submit"
-          style={{
-            padding: '10px 20px',
-            fontSize: '16px',
-            backgroundColor: '#8b4513', // Brown color
-            color: 'white',
-            border: 'none',
-            borderRadius: '5px',
-            cursor: 'pointer',
-          }}
-        >
+        <button type="submit" className="submit-btn">
           Get Wine Pairing
         </button>
       </form>
 
       {wine && (
-        <div style={{ marginTop: '20px', fontSize: '18px' }}>
+        <div className="pairing-result">
           <h3>Wine Pairing for {dish}:</h3>
           <p>{wine}</p>
         </div>
       )}
 
-      {error && (
-        <div style={{ marginTop: '20px', color: 'red', fontSize: '16px' }}>
-          {error}
-        </div>
-      )}
+      {error && <div className="error-message">{error}</div>}
+
+      <div className="image-container">
+        <img src="wineglass.jpeg" alt="Wine glass" className="wine-image" />
+        <p className="photo-credit">
+          Photo by{' '}
+          <a
+            href="https://unsplash.com/@apolophotographer?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Apolo Photographer
+          </a>{' '}
+          on{' '}
+          <a
+            href="https://unsplash.com/photos/clear-glass-bottle-with-red-liquid-bWAHfy-lQVA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Unsplash
+          </a>
+        </p>
+      </div>
     </div>
   );
 };

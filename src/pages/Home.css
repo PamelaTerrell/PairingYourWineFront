@@ -1,0 +1,100 @@
+/* Home.css */
+
+.home-container {
+    padding: 40px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f9f7f5;
+    color: #333;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .heading {
+    font-size: 3em;
+    font-weight: 700;
+    color: #8b4513; /* Elegant wine brown color */
+    margin-bottom: 20px;
+  }
+  
+  .site-name {
+    font-style: italic;
+  }
+  
+  .description {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    font-weight: 300;
+  }
+  
+  .pairing-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .input-field {
+    padding: 12px;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 8px;
+    border: 2px solid #8b4513;
+    width: 300px;
+  }
+  
+  .submit-btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #8b4513;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #6f2d1f;
+  }
+  
+  .pairing-result {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #4b4b4b;
+  }
+  
+  .error-message {
+    margin-top: 20px;
+    color: red;
+    font-size: 18px;
+  }
+  
+  .image-container {
+    margin-top: 40px;
+    position: relative;
+  }
+  
+  .wine-image {
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .photo-credit {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #777;
+  }
+  
+  .photo-credit a {
+    color: #8b4513;
+    text-decoration: none;
+  }
+  
+  .photo-credit a:hover {
+    text-decoration: underline;
+  }
+  

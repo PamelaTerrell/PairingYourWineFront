@@ -1,5 +1,6 @@
 import React from 'react';
-import './About.css'; // Assuming you will create a corresponding CSS file
+import './About.css'; 
+import Footer from './Footer';
 
 const About = () => {
   return (
@@ -29,7 +30,9 @@ const About = () => {
       <p>
         So go ahead, experiment, and enjoy the journey of discovering the perfect wine to go with your favorite dishes!
       </p>
+      <Footer />
     </div>
+    
   );
 };
 

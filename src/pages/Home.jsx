@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Home.css'; // Import the updated CSS for styling
+import Footer from './Footer';
 
 const Home = () => {
   // State to store the selected dish and wine pairing result
@@ -49,7 +50,7 @@ const Home = () => {
           className="input-field"
         />
         <button type="submit" className="submit-btn">
-          Get Wine Pairing
+          Get Vino Pairing
         </button>
       </form>
 
@@ -83,7 +84,10 @@ const Home = () => {
           </a>
         </p>
       </div>
+      <Footer /> 
+    
     </div>
+    
   );
 };
 

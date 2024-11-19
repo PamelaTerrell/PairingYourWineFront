@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './AddWinePairing.css'; // Import the CSS file
+import Footer from './Footer';
 
 const AddWinePairing = () => {
   const [wine, setWine] = useState('');
@@ -136,6 +137,7 @@ const AddWinePairing = () => {
           <p>No pairings available yet.</p>
         )}
       </div>
+      <Footer />
     </div>
   );
 };

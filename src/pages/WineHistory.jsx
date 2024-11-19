@@ -1,5 +1,6 @@
 import React from 'react';
-import './WineHistory.css'; // Optional: For styling
+import './WineHistory.css';
+import Footer from './Footer';
 
 const WineHistory = () => {
   return (
@@ -50,6 +51,7 @@ const WineHistory = () => {
           Today, wine is enjoyed around the world, and the wine industry continues to evolve. New trends, such as organic and biodynamic wines, have emerged, and innovations in winemaking continue to push the boundaries of flavor and style.
         </p>
       </section>
+      <Footer />
     </div>
   );
 };

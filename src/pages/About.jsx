@@ -4,7 +4,7 @@ import './About.css'; // Assuming you will create a corresponding CSS file
 const About = () => {
   return (
     <div className="about-container">
-      <h1>About Wine Pairings</h1>
+      <h1>About Vino Pairings</h1>
       <p>
         You probably know the golden rule of thumb about wine pairings: Red wines pair best with bold-flavored proteins (red meat) and white wines pair best with light-intensity proteins (chicken or fish). 
         Of course, there's more to making successful wine-and-food pairings. The key to finding the perfect match is to balance the flavors, textures, and aromas of both the food and the wine.

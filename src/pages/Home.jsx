@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-//import wineGlassImage from '../assets/wineglass.jpeg';
 
 const Home = () => {
   // State to store the selected dish and wine pairing result
@@ -38,8 +37,6 @@ const Home = () => {
         Discover the perfect wine pairing for your favorite dishes.
       </p>
 
-      
-
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -76,12 +73,7 @@ const Home = () => {
           <h3>Wine Pairing for {dish}:</h3>
           <p>{wine}</p>
         </div>
-
-        
-
       )}
-
-      
 
       {error && (
         <div style={{ marginTop: '20px', color: 'red', fontSize: '16px' }}>

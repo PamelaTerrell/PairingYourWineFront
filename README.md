@@ -1,5 +1,9 @@
 # Wine Pairing App
 
+https://github.com/PamelaTerrell/PairingYourWineFront.git
+
+https://github.com/PamelaTerrell/PairingYourWineBack.git
+
 A web application that helps users discover the perfect wine pairing for various dishes. Users can input a dish, get a recommended wine pairing, and even add new pairings to the database.
 
 ## Features

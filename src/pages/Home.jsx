@@ -8,23 +8,26 @@ const Home = () => {
   const [wine, setWine] = useState('');
   const [error, setError] = useState('');
 
-  // Wine pairing data
+  // Wine pairing data (lowercase keys)
   const pairings = {
-    Chicken: 'Chardonnay',
-    Beef: 'Cabernet Sauvignon',
-    Pork: 'Pinot Noir',
-    Cheese: 'Sauvignon Blanc',
-    Pasta: 'Pinot Grigio',
-    Seafood: 'Albariño',
+    chicken: 'Chardonnay',
+    beef: 'Cabernet Sauvignon',
+    pork: 'Pinot Noir',
+    cheese: 'Sauvignon Blanc',
+    pasta: 'Pinot Grigio',
+    seafood: 'Albariño',
   };
 
   // Handle the form submission
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Check if the dish entered by the user matches any of the pairings
-    if (pairings[dish]) {
-      setWine(pairings[dish]); // Set the corresponding wine pairing
+    // Convert the user input to lowercase for case-insensitive matching
+    const lowercaseDish = dish.toLowerCase();
+
+    // Check if the lowercase dish entered by the user matches any of the pairings
+    if (pairings[lowercaseDish]) {
+      setWine(pairings[lowercaseDish]); // Set the corresponding wine pairing
       setError(''); // Clear any previous error
     } else {
       setWine(''); // Clear the wine pairing if no match
@@ -84,10 +87,8 @@ const Home = () => {
           </a>
         </p>
       </div>
-      <Footer /> 
-    
+      <Footer />
     </div>
-    
   );
 };
 

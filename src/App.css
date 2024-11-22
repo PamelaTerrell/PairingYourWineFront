@@ -8,6 +8,7 @@ body {
   padding: 20px;
   text-align: center;
   margin: 0;
+  box-sizing: border-box;
 }
 
 /* Heading 1 - Title of the page */
@@ -84,4 +85,32 @@ h3 {
 /* Add some space around the page */
 div {
   padding: 20px;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  form {
+    width: 100%;
+    padding: 15px;
+  }
+
+  input, button {
+    width: 100%;  /* Full width inputs and button on mobile */
+  }
+
+  h1 {
+    font-size: 1.8rem;  /* Smaller title font */
+  }
+
+  h2 {
+    font-size: 1.2rem;  /* Smaller subheading */
+  }
+
+  div {
+    padding: 10px;
+  }
 }

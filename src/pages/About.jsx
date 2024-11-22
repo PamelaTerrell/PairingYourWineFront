@@ -28,7 +28,7 @@ const About = () => {
         But don't forget: the most important thing is to drink what you enjoy!
       </p>
       <p>
-        So go ahead, experiment, and enjoy the journey of discovering the perfect vino to go with your favorite dishes!
+        So go ahead, experiment, and enjoy the journey of discovering the perfect wine to go with your favorite dishes!
       </p>
       <Footer />
     </div>

@@ -45,7 +45,10 @@ const Home = () => {
     berry_desserts: 'Lambrusco',
     cream_based_desserts: 'Late Harvest Riesling',
     baked_goods: 'Pinot Noir',
+    eggs: 'Sauvignon Blanc',  
+    cheesecake: 'Moscato',    
   };
+  
   
 
   // Handle the form submission
